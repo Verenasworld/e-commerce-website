@@ -122,4 +122,6 @@ h1{
     position: relative;
 }
 
-.icon:not(:last-child)
+.icon:not(:last-child){
+    margin-right: 0.5rem;
+}
