@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --black: #222;
+    --blue: rgb(78, 140, 221);
+    --green: rgb(42, 216, 80);
+    --grey1: #f0f0f0;
+    --grey2: #e9d7d3;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+   list-style-type: none; 
+}
+
+
+.container{
+
+    max-width: 180rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    position: relative;
+    min-height: 100vh;
+    overflow-x:hidden;
+}
+
+.top-nav{
+    background-color: var(--blue);
+    font-size: 1.3rem;
+    color: var(--white);
+    
+}
+
+
+.top-nav div{
+justify-content: space-between;
+height: 4.5rem;
+}
+
+.top-nav a{
+    padding: 0 0.5rem;
+    color: var(--white);
+}
+
+
+.navigation{
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.nav-center{
+    justify-content: space-between;
+}
+
+
+
+.nav-center .nav-item:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+.nav-center .nav-item .nav-link{
+    font-size: 1.8rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.nav-center .nav-link:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    transition: 1s ease-in;
+  
+}
+
+h1{
+    font-family: 'Otomanopee One', sans-serif;
+    text-transform: uppercase;
+   
+
+}
+
+.icon{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    color: #222;
+    position: relative;
+}
+
+.icon:not(:last-child)
