@@ -496,7 +496,7 @@ h1{
     transform: translateY(20px);
     visibility: hidden;
     opacity: 0;
-    margin: 2px;
+    margin: 5px;
     
 }
 
@@ -528,4 +528,10 @@ h1{
     background-color: rgba(78, 140, 221, 0.8);
     color: white;
     transition: 200ms  ease-in-out;
+    transform: scale(1.1);
+}
+
+.product-item:hover .product-thumb img{
+    transform: scale(1.1);
+    transition: 500ms linear;
 }
