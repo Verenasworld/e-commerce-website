@@ -15,7 +15,7 @@
     --blue: rgb(78, 140, 221);
     --green: rgb(42, 216, 80);
     --grey1: #f0f0f0;
-    --grey2: #e9d7d3;
+    --grey2: #d3e5e9;
 }
 
 
@@ -82,6 +82,7 @@ height: 4.5rem;
 .navigation{
     height: 6rem;
     line-height: 6rem;
+   
 }
 
 .nav-center{
@@ -203,4 +204,112 @@ h1{
     justify-content: center;
     height: 3rem;
 }
+}
+
+/*slider */
+
+.hero, .hero .glide__slides{
+    background-color: var(--white);
+    position: relative;
+    height: calc(100vh-4rem);
+    margin: 0 3rem;
+    overflow: hidden;
+}
+
+.hero .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(0.5rem);
+    z-index: 999;
+    padding: 5rem;
+}
+
+.hero .left h2{
+    font-size: 6rem;
+    font-family: 'Otomanopee One', sans-serif;
+    margin: 1rem 0;
+}
+
+.hero .left p{
+    font-size: 3rem;
+  
+    margin: 0 0 1rem;
+}
+
+.hero .left .hero-btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    background-color:var(--blue);
+    color: white;
+}
+
+.hero .rigth{
+   
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.hero .rigth img{
+    opacity: 0;
+    transition: all 1000ms ease-in-out ;
+}
+
+.hero .rigth img.img1{
+    width: 100%;     
+}
+
+.hero .rigth img.img2{
+   
+    width: 100%;
+
+       
+}
+
+.glide__slide--active .center .rigth img{
+    opacity: 1;
+}
+
+.glide__slide--active .left{
+    opacity: 1;
+    top: 35%;
+}
+
+@media(max-width: 999px){
+    .hero .left h2{
+        font-size: 3rem;
+    }
+    .hero .left p{
+        font-size: 1rem;
+    }
+    .glide__slide--active .left{
+        top: 0%;
+    }
+}
+
+@media(max-width: 450px){
+    .glide__slide--active .left{
+        top: 1;
+        left: 1;
+    }
+    .hero, .hero .glide__slides{
+        height: 100%;
+    }
+    .hero .left{
+    padding: 1rem;
+    margin: 2px;
+    }
 }
