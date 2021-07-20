@@ -74,7 +74,7 @@ height: 4.5rem;
 }
 
 .top-nav a{
-    padding: 0 0.5rem;
+    padding: 0 1.2rem;
     color: var(--white);
 }
 
@@ -122,4 +122,85 @@ h1{
     position: relative;
 }
 
-.icon:not(:last-child)
+
+.icon:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+.icon span{
+    position: absolute;
+    top: 3px;
+    right: -3px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 2rem;
+    justify-content: center;
+}
+
+.nav-list .icons{
+    display: none;
+}
+
+.nav-center .hamburger{
+    display: none;
+    font-size: 2.3rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+@media(max-width: 900px){
+.nav-list{
+    position: fixed;
+    top: 11%;
+    left: -100%;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    background-color: white;
+    height: 100%;
+    max-width: 35rem;
+    width: 0;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-list.open{
+    left: 20px;
+    width: 100%;
+}
+
+.nav-list .nav-item{
+    margin: 0 1rem 0;
+    width: 100%;
+}
+
+.nav-list .nav-link {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.nav-center .hamburger{
+    display: block;
+    font-size: 3rem;
+}
+
+.icons{
+    display: none;
+}
+
+.nav-list .icons{
+    display: flex;
+}
+
+.top-nav ul {
+    display: none;
+}
+
+.top-nav div{
+    justify-content: center;
+    height: 3rem;
+}
+}
