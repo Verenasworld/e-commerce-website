@@ -420,3 +420,91 @@ h1{
         margin: auto;
      }
 }
+
+/* New Arrival*/
+
+.title{
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.title h2{
+    font-size: 4rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.product-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.product-item{
+    position: relative;
+    margin: 1rem;
+    
+}
+
+.product-thumb{
+    object-fit: cover;
+    transition: all 500ms linear;
+}
+
+
+.product-info{
+    padding: 1rem;
+    text-align: center;
+
+}
+.product-info span{
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.product-info a{
+    display:block;
+    font-size: 1.5rem;
+    transition: all 300ms linear;
+    color: var(--blue);
+   
+}
+
+.product-info a:hover{
+    transform: scale(1.1);
+}
+
+.product-item .icons{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.product-item .icons li{
+    background-color: var(--white) ;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    transform: translateY(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.product-item .icons li:first-child{
+    transition-delay: 0.1s;
+}
+
+.product-item .icons li:nth-child(2){
+    transition-delay: 0.3s;
+}
+
+.product-item .icons li:nth-child(3){
+    transition-delay: 0.5s;
+}
