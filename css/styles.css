@@ -508,3 +508,10 @@ h1{
 .product-item .icons li:nth-child(3){
     transition-delay: 0.5s;
 }
+
+.product-item:hover .icons li{
+
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
