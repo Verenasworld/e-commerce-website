@@ -18,6 +18,10 @@
     --grey2: #d3e5e9;
 }
 
+h2{
+    font-family: 'Otomanopee One', sans-serif;
+     font-size: 4rem;
+}
 
 html{
     font-size: 62.5%;
@@ -429,10 +433,8 @@ h1{
     margin-top: 5rem;
 }
 
-.title h2{
-    font-size: 4rem;
-    font-family: 'Otomanopee One', sans-serif;
-}
+
+
 
 .product-center{
     display: flex;
@@ -534,4 +536,60 @@ h1{
 .product-item:hover .product-thumb img{
     transform: scale(1.1);
     transition: 500ms linear;
+}
+
+
+/*banner*/
+
+.banner{
+    position: relative;
+    background-color: rgba(78, 140, 221, 0.4);
+    padding: 10rem;
+    height: 40vh;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.banner .rigth{
+    position: absolute;
+    bottom: 0;
+    width: 80rem;
+    right: 300px;
+   
+    
+}
+.banner .left{
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(0.5);
+    padding: 100px;
+    z-index: 999;
+}
+.banner .trend, .banner p{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+.banner .btn{
+    margin-top: 4rem;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px 20px;
+}
+
+@media(max-width: 900px ){
+    .banner .rigth{
+        right: 100px
+    }
+
+    .banner h2{
+        font-size: 2.5rem;
+    }
+
+    .banner{
+        padding: 5rem;
+    }
 }
