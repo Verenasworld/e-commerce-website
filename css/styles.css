@@ -161,7 +161,7 @@ h1{
 @media(max-width: 900px){
 
     .header{
-      max-height: 10vh;
+      min-height: 50%;
     }
     .top-nav{
         opacity: 0;
