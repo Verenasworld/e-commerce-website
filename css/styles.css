@@ -574,7 +574,7 @@ h1{
     position: relative;
     background-color: rgba(78, 140, 221, 0.4);
     padding: 10rem;
-    height: 40vh;
+    height: 50vh;
     margin-top: 50px;
     text-align: center;
 }
@@ -666,4 +666,43 @@ h1{
     }
 
 
+}
+
+
+/*Contact*/
+
+.contact{
+    margin-top: 20px;
+    background-color: var(--black);
+    color: white;
+    padding: 10rem 20rem;
+}
+
+.contact .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.contact .row .col h2{
+    margin-bottom: 1.5rem;
+}
+
+.contact .row .col p{
+    width: 70%;
+    margin-bottom: 2rem;
+}
+.btn-1{
+background-color: var(--blue);
+padding: 10px 20px;
+display: inline-block;
+
+
+}
+
+.contact form div{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
 }
