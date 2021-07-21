@@ -545,8 +545,27 @@ h1{
     transform: scale(1.1);
     transition: 500ms linear;
 }
+.product-item:hover .discount{
+    opacity: 1;
+    visibility: visible;
+    transition: 500ms ease-in;
+}
 
+.product-item .discount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+   
+    padding: 0.5rem 2rem;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    visibility: 0;
+    font-family: 'Otomanopee One', sans-serif;
 
+}
 
 
 /*banner*/
@@ -594,13 +613,31 @@ h1{
     padding: 15px 20px;
 }
 
+.banner .color{
+    color: var(--blue);
+    margin: 5px;
+    padding: 10px;
+    font-size: 2.5rem;
+    font-family: 'Otomanopee One', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.2rem);
+    border-radius: 20px;
+}
+
+.banner .trend{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.banner h2{
+    margin-bottom: 20px;
+}
 @media(max-width: 900px ){
     .banner .rigth{
         right: 100px
     }
 
     .banner h2{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .banner{
@@ -627,4 +664,6 @@ h1{
     .banner .rigth{
         right: 0;
     }
+
+
 }
