@@ -941,5 +941,34 @@ footer .row{
 
 .popup-form::placeholder{
     color: white;
+    letter-spacing: 1px;
   
 }
+
+.rigth-content a:link,
+.rigth-content a:visited{
+    display: inline-block;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-radius: 3rem;
+    
+    background-color: white;
+    color: var(--blue);
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 2px;
+    border: 1px var(--blue);
+    transition: .3s;
+}
+
+.rigth-content a:hover{
+    background-color: var(--blue);
+    color: white;
+    transform: scale(1.1);
+    transition: .3s;
+}
+/* 
+.hide-popup{
+    transform:scale(0.2);
+    opacity: 0;
+    visibility: hidden;
+}*/
