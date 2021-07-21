@@ -972,3 +972,23 @@ footer .row{
     opacity: 0;
     visibility: hidden;
 }*/
+
+@media(max-width:1120px){
+    .rigth-content{
+        width: 100%;
+    }
+    .rigth-content h1{
+        font-size: 3.5rem;
+        
+    }
+}
+
+@media(max-width:900px){
+    .popup-rigth{
+        width: 100%;
+    }
+    .popup-left{
+        display: none;
+        
+    }
+}
