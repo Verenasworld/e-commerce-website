@@ -692,6 +692,7 @@ h1{
 .contact .row .col p{
     width: 70%;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 .btn-1{
 background-color: var(--blue);
@@ -705,4 +706,30 @@ display: inline-block;
     position: relative;
     width: 80%;
     margin: 0 auto;
+}
+
+.contact form input {
+    text-indent: 3rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+    outline: none;
+    border: none;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.contact form a{
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-color: var(--blue); 
+  margin-top: 3px;
+  margin-right: 2px;
+   padding: 1rem 4rem;
+   border-radius: 1rem;
+}
+
+.contact form:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
 }
