@@ -767,3 +767,9 @@ display: inline-block;
         text-align: center;
     }
 }
+
+
+.footer{
+    background-color: var(--blue);
+    color: white;
+}
