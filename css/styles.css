@@ -60,7 +60,7 @@ li{
 
 .header{
     position: relative;
-    min-height: 100vh;
+    
     overflow-x:hidden;
 }
 
@@ -155,6 +155,8 @@ h1{
     color: var(--black);
     cursor: pointer;
 }
+
+
 
 @media(max-width: 900px){
 
@@ -313,7 +315,7 @@ h1{
         font-size: 1rem;
     }
     .glide__slide--active .left{
-        top: 0;
+        top: 5;
         
     }
     .hero .hero-btn{
@@ -330,6 +332,8 @@ h1{
         height: 100%;
     }
     .hero .left{
+        position: absolute;
+        top: 2rem;
     padding: 3rem;
     margin: 5px;
     }
@@ -339,6 +343,7 @@ h1{
 .section{
    
     overflow: hidden;
+  
 
     
 }
@@ -346,7 +351,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+  
   
   
     
@@ -367,6 +372,7 @@ h1{
     width: 100%;
    height: 100%;
    box-shadow: 10px 10px 15px silver;
+  
 }
 
 .cat-center .cat img:hover{
@@ -393,7 +399,7 @@ h1{
 }
 
 @media(max-width:600px){
-     .cat-center{
+     .cat-center {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -402,6 +408,8 @@ h1{
         top: -100px;
        
      }
+
+    
      .cat-center .cat img{
          position: relative;
          max-width: 100%;
@@ -430,7 +438,7 @@ h1{
 .title{
     text-align: center;
     margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 
@@ -539,6 +547,8 @@ h1{
 }
 
 
+
+
 /*banner*/
 
 .banner{
@@ -558,23 +568,27 @@ h1{
    
     
 }
+
 .banner .left{
+   
     position: relative;
-    background-color: rgba(255,255,255,0.5);
-    backdrop-filter: blur(0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.2rem);
     padding: 100px;
     z-index: 999;
+   
 }
 .banner .trend, .banner p{
     display: block;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 40px;
     
 
 }
 
 .banner .btn{
-    margin-top: 4rem;
+    position: relative;
+    margin-top: 20px;
     background-color: var(--blue);
     color: var(--white);
     padding: 15px 20px;
@@ -591,5 +605,26 @@ h1{
 
     .banner{
         padding: 5rem;
+        height: 80vh;
+    }
+    .banner .left {
+       
+        margin-top: 8rem;
+
+    }
+   
+}
+
+
+@media(max-width: 600px){
+    .banner .left {
+       
+        margin-top: 4rem;
+        padding: 10px;
+
+    }
+
+    .banner .rigth{
+        right: 0;
     }
 }
