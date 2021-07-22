@@ -16,10 +16,12 @@
     --green: rgb(42, 216, 80);
     --grey1: #f0f0f0;
     --grey2: #d3e5e9;
+
+    --font-o:'Otomanopee One', sans-serif;
 }
 
 h2{
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
      font-size: 4rem;
 }
 
@@ -118,7 +120,7 @@ height: 4.5rem;
 }
 
 h1{
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
     text-transform: uppercase;
    
 
@@ -407,7 +409,7 @@ section .category{
    padding-top: 10px;
    font-size: 2rem;
    
-   font-family: 'Otomanopee One', sans-serif;
+   font-family: var(--font-o);
 }
 
 @media(max-width:600px){
@@ -485,7 +487,7 @@ section .category{
 .product-info span{
     display: inline-block;
     font-size: 2rem;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
 }
 .product-info a{
     display:block;
@@ -576,7 +578,7 @@ section .category{
     font-size: 1.5rem;
     opacity: 0;
     visibility: 0;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
 
 }
 
@@ -633,7 +635,7 @@ section .category{
     margin: 5px;
     padding: 3px 10px;
     font-size: 2.5rem;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(0.2rem);
     border-radius: 20px;
@@ -731,7 +733,7 @@ display: inline-block;
     padding: 1.5rem 0;
     outline: none;
     border: none;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
 }
 
 .contact form a{
@@ -821,7 +823,7 @@ footer .row{
 
 .footer h4{
     font-size: 2rem;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
     margin-bottom: 1rem;
 }
 
@@ -970,7 +972,7 @@ footer .row{
     
     background-color: white;
     color: var(--blue);
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
     letter-spacing: 2px;
     border: 1px var(--blue);
     transition: .3s;
@@ -1042,7 +1044,7 @@ th{
     background-color: var(--blue);
     color: white;
     font-weight: 100;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
     font-size: 2rem;
     letter-spacing: 0.1rem;
 
@@ -1061,7 +1063,7 @@ td input{
     width: 10rem;
     height: 5rem;
     padding: 1.5rem;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
 }
 
 td a{
@@ -1073,7 +1075,7 @@ td a{
 
 td h3{
     padding-top: 2rem;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: var(--font-o);
 }
 
 td img{
@@ -1119,3 +1121,71 @@ td:last-child{
         display: none;
     }
 }
+
+
+/*Login Form*/
+
+.login-form{
+    padding: 5rem 0;
+    max-width: 50rem;
+    margin: 15rem auto;
+
+}
+
+.login-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form form h2{
+    margin-bottom: 1rem;
+}
+
+.login-form form p{
+    margin-bottom: 2rem;
+}
+.login-form form label{
+    margin-bottom: 1rem;
+}
+
+.login-form input{
+    border: 1px solid var(--blue);
+    outline: none;
+    padding: 1.5rem 0;
+    text-indent: 1rem;
+    margin-bottom: 2rem;
+     border-radius: 0.5rem;
+}
+
+
+
+
+.login-form form input::placeholder{
+    font-size: 1.6rem;
+   
+    font-family: var(--font-o);
+}
+
+
+.login-form form .buttons{
+    margin-top: 1rem;
+}
+
+.login-form form button{
+    background-color: var(--blue);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.9rem;
+    padding: 1rem 3rem;
+    margin-right: 1.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.login-form form p a{
+    color: var(--blue);
+    font-size: 1.9rem;
+    font-family: var(--font-o);
+}
+
