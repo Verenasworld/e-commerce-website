@@ -59,7 +59,7 @@ li{
 }
 
 .header{
-    position: relative;
+    
     
     overflow-x:hidden;
 }
@@ -68,14 +68,17 @@ li{
     background-color: var(--blue);
     font-size: 1.3rem;
     color: var(--white);
-    
+ 
+ 
 }
 
 
 .top-nav div{
 justify-content: space-between;
 height: 4.5rem;
+
 }
+
 
 .top-nav a{
     padding: 0 1.2rem;
@@ -84,6 +87,8 @@ height: 4.5rem;
 
 
 .navigation{
+    
+   
     height: 6rem;
     line-height: 6rem;
    
@@ -159,6 +164,11 @@ h1{
 
 
 @media(max-width: 900px){
+
+    .nav-center .container{
+       
+       
+    }
 
     .header{
       min-height: 50%;
@@ -325,32 +335,34 @@ h1{
 
 @media(max-width: 450px){
     .glide__slide--active .left{
-        top: 10;
+        top: 5;
         left: 10;
     }
     .hero, .hero .glide__slides{
         height: 100%;
     }
-    .hero .left{
-        position: absolute;
-        top: 2rem;
-    padding: 3rem;
-    margin: 5px;
-    }
+    
 }
 
 /* category*/
 .section{
-   
+   background-color: var(--white);
     overflow: hidden;
+    
   
 
     
+}
+
+
+section .category{
+    background-color: var(--white);
 }
 .cat-center{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--white);
   
   
   
@@ -449,6 +461,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
     
 }
 
@@ -573,15 +586,15 @@ h1{
 .banner{
     position: relative;
     background-color: rgba(78, 140, 221, 0.4);
-    padding: 10rem;
-    height: 50vh;
+    padding: 10rem ;
+    height: 60vh;
     margin-top: 50px;
     text-align: center;
 }
 
 .banner .rigth{
     position: absolute;
-    bottom: 0;
+    bottom: -10rem;
     width: 80rem;
     right: 300px;
    
@@ -593,30 +606,32 @@ h1{
     position: relative;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(0.2rem);
-    padding: 100px;
     z-index: 999;
+   padding-top: 20px;
+    
    
 }
 .banner .trend, .banner p{
     display: block;
     font-size: 2rem;
-    margin-bottom: 40px;
-    
+    margin-bottom: 20px;
+   
 
 }
 
 .banner .btn{
     position: relative;
-    margin-top: 20px;
+    margin: 20px 0;
     background-color: var(--blue);
     color: var(--white);
-    padding: 15px 20px;
+    padding: 10px 20px;
+
 }
 
 .banner .color{
     color: var(--blue);
     margin: 5px;
-    padding: 10px;
+    padding: 3px 10px;
     font-size: 2.5rem;
     font-family: 'Otomanopee One', sans-serif;
     background-color: rgba(255, 255, 255, 0.5);
@@ -642,7 +657,7 @@ h1{
 
     .banner{
         padding: 5rem;
-        height: 80vh;
+        height: 100vh;
     }
     .banner .left {
        
@@ -773,13 +788,14 @@ display: inline-block;
     background-color: var(--blue);
     color: white;
     padding: 5rem 10rem;
+    
    
 }
 
 footer .row{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -990,5 +1006,116 @@ footer .row{
     .popup-left{
         display: none;
         
+    }
+}
+
+/*carts*/
+section .new-arrival{
+    margin: 50px 0;
+}
+.cart{
+    margin: 3rem auto;
+    padding: .8rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+  
+   
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-info .infoplus{
+    margin-top: 5rem;
+    padding-left: 2rem;
+    border-left: 2px solid var(--blue);
+}
+
+th{
+    text-align: left;
+    padding: 1.5rem;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 100;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+
+}
+
+td{
+    padding: 2rem 2.5rem;
+    
+}
+
+td.euro:hover{
+   transform: scale(1.1);
+}
+
+td input{
+    width: 10rem;
+    height: 5rem;
+    padding: 1.5rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+td a{
+    color: var(--blue);
+    font-size: 1.4rem;
+}
+
+
+
+td h3{
+    padding-top: 2rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+td img{
+    width: 25rem;
+    height: 25rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+td img:hover{
+    transform: scalex(1.1);
+}
+
+.total-price{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.total-price table{
+    border-top: 3px solid var(--blue);
+    width: 100%;
+    max-width: 35rem;
+    border-bottom: 1px solid var(--blue);
+
+}
+
+td:last-child{
+    text-align: rigth;
+}
+
+.checkout-btn{
+    display: inline-block;
+    background-color: var(--blue);
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 600px){
+    .cart-info .infoplus{
+        display: none;
     }
 }
