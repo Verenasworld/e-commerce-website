@@ -461,6 +461,7 @@ section .category{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
     
 }
 
@@ -1009,8 +1010,11 @@ footer .row{
 }
 
 /*carts*/
+section .new-arrival{
+    margin: 50px 0;
+}
 .cart{
-    margin: 2rem auto;
+    margin: 3rem auto;
     padding: .8rem;
 }
 
@@ -1111,7 +1115,7 @@ td:last-child{
 }
 
 @media (max-width: 600px){
-    .cart-info p{
+    .cart-info .infoplus{
         display: none;
     }
 }
