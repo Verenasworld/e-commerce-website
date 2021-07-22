@@ -1010,13 +1010,14 @@ footer .row{
 
 /*carts*/
 .cart{
-    margin: auto;
+    margin: 2rem auto;
     padding: .8rem;
 }
 
 table{
     width: 100%;
     border-collapse: collapse;
+  
    
 }
 
@@ -1027,6 +1028,8 @@ table{
 
 .cart-info .infoplus{
     margin-top: 5rem;
+    padding-left: 2rem;
+    border-left: 2px solid var(--blue);
 }
 
 th{
@@ -1062,11 +1065,53 @@ td a{
     font-size: 1.4rem;
 }
 
+
+
+td h3{
+    padding-top: 2rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
 td img{
     width: 25rem;
     height: 25rem;
     margin-right: 1rem;
+    margin-top: 2rem;
 }
 td img:hover{
     transform: scalex(1.1);
+}
+
+.total-price{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.total-price table{
+    border-top: 3px solid var(--blue);
+    width: 100%;
+    max-width: 35rem;
+    border-bottom: 1px solid var(--blue);
+
+}
+
+td:last-child{
+    text-align: rigth;
+}
+
+.checkout-btn{
+    display: inline-block;
+    background-color: var(--blue);
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 600px){
+    .cart-info p{
+        display: none;
+    }
 }
