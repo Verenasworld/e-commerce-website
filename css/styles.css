@@ -1119,3 +1119,26 @@ td:last-child{
         display: none;
     }
 }
+
+
+/*Login Form*/
+
+.login-form{
+    padding: 5rem 0;
+    max-width: 50rem;
+    margin: 5rem auto;
+
+}
+
+.login-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form form h2{
+    margin-bottom: 1rem;
+}
+
+.login-form form p{
+    margin-bottom: 2rem;
+}
