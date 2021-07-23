@@ -1191,3 +1191,36 @@ td:last-child{
     font-family: var(--font-o);
 }
 
+/* all products page*/
+
+.section .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.all-products .top select{
+    font-family: var(--font-o);
+    width: 30rem;
+    padding: 2rem;
+    border: 1px solid var(--blue);
+    appearance: none;
+    outline: none;
+    background-color: var(--white);
+}
+
+.all-products form{
+    position: relative;
+    z-index: 1;
+}
+
+.all-products form span{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 0;
+
+}
