@@ -25,3 +25,15 @@ if(popup){
         },1000)
     });
 }
+
+//hover touch
+
+var touchitem = document.getElementsByClassName("product-item");
+
+myButton.addEventListener("touchstart" , function(){
+    myButton.classList.add("product-item");
+})
+
+myButton.addEventListener("touchend" , function(){
+    myButton.classList.remove("product-item");
+})

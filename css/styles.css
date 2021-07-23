@@ -167,10 +167,6 @@ h1{
 
 @media(max-width: 900px){
 
-    .nav-center .container{
-       
-       
-    }
 
     .header{
       min-height: 50%;
@@ -541,6 +537,12 @@ section .category{
     background-color: rgba(78, 140, 221, 0.4);
     transition: 300ms ease;
 }
+
+.product-item-touch:hover{
+    background-color: rgba(78, 140, 221, 0.4);
+    transition: 300ms ease; 
+}
+
 
 .product-item:hover .icons li{
 
