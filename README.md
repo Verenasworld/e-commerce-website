@@ -1,6 +1,6 @@
 
 
-
+#First plain shop design with slider and productdetail zoom
 
 
 
