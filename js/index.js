@@ -28,12 +28,3 @@ if(popup){
 
 //hover touch
 
-var touchitem = document.getElementsByClassName("product-item");
-
-myButton.addEventListener("touchstart" , function(){
-    myButton.classList.add("product-item");
-})
-
-myButton.addEventListener("touchend" , function(){
-    myButton.classList.remove("product-item");
-})
