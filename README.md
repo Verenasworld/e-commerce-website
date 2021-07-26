@@ -20,4 +20,7 @@ https://user-images.githubusercontent.com/51680972/126340950-68cf2b0a-00c6-4b2f-
 https://user-images.githubusercontent.com/51680972/126506349-4e4109ef-23d2-4b01-996b-b11a7c2d8ed1.mp4
 
 #Stylish Magnifying Glass Plugin - SergeLand Image Zoomer
-https://user-images.githubusercontent.com/51680972/126957305-790975c0-bf0d-4c67-849d-459d75a115e2.mp4
+
+https://user-images.githubusercontent.com/51680972/126957500-361be06d-7a57-4d3a-81c6-54872372e5ee.mp4
+
+
