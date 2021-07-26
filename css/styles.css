@@ -1320,7 +1320,7 @@ td:last-child{
 .product-detail .rigth div{
     display: inline-block;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 .product-detail .rigth select{
   
@@ -1433,11 +1433,11 @@ td:last-child{
     }
 
     
-.product-detail .left .main{
+    .product-detail .left .main{
     text-align: start;
     margin-bottom: 2rem;
     height: 45rem;
-}
+    }
    
     
 }
