@@ -167,10 +167,6 @@ h1{
 
 @media(max-width: 900px){
 
-    .nav-center .container{
-       
-       
-    }
 
     .header{
       min-height: 50%;
@@ -541,6 +537,12 @@ section .category{
     background-color: rgba(78, 140, 221, 0.4);
     transition: 300ms ease;
 }
+
+.product-item-touch:hover{
+    background-color: rgba(78, 140, 221, 0.4);
+    transition: 300ms ease; 
+}
+
 
 .product-item:hover .icons li{
 
@@ -1189,3 +1191,253 @@ td:last-child{
     font-family: var(--font-o);
 }
 
+/* all products page*/
+
+.section .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.all-products .top select{
+    font-family: var(--font-o);
+    width: 30rem;
+    padding: 2rem;
+    border: 1px solid var(--blue);
+    appearance: none;
+    outline: none;
+    background-color: var(--white);
+}
+
+.all-products form{
+    position: relative;
+    z-index: 1;
+}
+
+.all-products form span{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 0;
+
+}
+
+@media(max-width: 768px){
+   
+.section .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.all-products .top select{
+   margin-top: 2rem;
+    
+}
+}
+
+/*pagination*/
+
+.pagination{
+    display: flex;
+    align-items: center;
+    padding: 3rem 5rem;
+}
+
+.pagination span{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.pagination span:hover{
+    background-color: var(--blue);
+    color:white;
+}
+
+/* Product Detail Page*/
+
+
+.productdetail-container{
+    margin: 10rem 0;
+}
+
+.product-detail .details{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+ 
+
+}
+
+.product-detail .left{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-detail .left .main{
+    text-align: center;
+    margin-bottom: 2rem;
+    height: 45rem;
+}
+
+.product-detail .left .main img{
+    object-fit: cover;
+    height: 100%;
+    width: 80%;
+}
+.product-detail .rigth{
+    margin: 2rem;
+}
+
+.product-detail .rigth span{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-detail .rigth h2{
+    line-height: 7rem;
+    margin-bottom: 2rem;
+    font-size: 6rem;
+}
+
+.product-detail .rigth .price{
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--blue);
+   margin-bottom: 2rem;
+}
+
+
+.product-detail .rigth div{
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+.product-detail .rigth select{
+  
+        font-family: var(--font-o);
+        width: 30rem;
+        padding: 2rem;
+        border: 1px solid var(--blue);
+        appearance: none;
+        outline: none;
+        background-color: var(--white);
+    
+}
+
+.product-detail form{
+    margin-bottom: 2rem;
+    z-index: 0;
+}
+
+
+.product-detail form span{
+   position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 5rem
+}
+.product-detail .form{
+    margin-bottom: 3rem;
+}
+
+.product-detail .form input{
+    padding: .8rem;
+    text-align: center;
+    width: 3.5rem;
+    margin-right: 3rem;
+
+}
+
+.product-detail .form .addcart{
+    background-color: var(--blue);
+    color: white;
+    padding: .8rem 4rem;
+    border-radius: 3rem;
+}
+.product-detail h3{
+    font-family: var(--font-o);
+    margin-bottom: 2rem;
+}
+.product-detail p{
+    margin-right: 2rem;
+    max-width: 80%;
+}
+
+
+
+@media(max-width: 966px){
+
+
+    .product-detail .left{
+        width: 100rem;
+        height: 45rem;
+    }
+
+    .product-detail .details{
+        gap: 3rem;
+    }
+
+    .product-detail .details {
+      
+       
+        grid-template-columns: 1fr;
+    
+    }
+    .product-detail .left .main{
+        text-align: start;
+        margin-bottom: 2rem;
+        height: 45rem;
+    }
+
+    .product-detail .rigth{
+     
+        margin: 2rem;
+       
+      }
+
+      .product-detail p{
+        margin-right: 2rem;
+        max-width: 80%;
+    }
+    
+}
+
+@media(max-width: 650px){
+
+
+    .product-detail .left{
+        width: 100rem;
+        height: 45rem;
+    
+    }
+
+    .product-detail .rigth{
+     
+      margin: 2rem;
+     
+    }
+
+    .product-detail .details{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .product-detail .left .main{
+    text-align: start;
+    margin-bottom: 2rem;
+    height: 45rem;
+    }
+   
+    
+}

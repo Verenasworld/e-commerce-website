@@ -25,3 +25,6 @@ if(popup){
         },1000)
     });
 }
+
+//hover touch
+
